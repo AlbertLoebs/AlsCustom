@@ -1,0 +1,19 @@
+.pagination{
+    text-align:center;
+}
+
+.pagination a{
+    color: black;
+    padding: 10px;
+    text-decoration: none; /*Gets rid of underline for visted links*/
+    display: inline-block;
+}
+
+.pagination a:hover{
+    color: red;
+}
+
+.pagination a.active{
+    background-color:rgb(9, 255, 0);
+    font-weight: bold
+}
