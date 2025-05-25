@@ -1,19 +1,64 @@
-.pagination{
-    text-align:center;
-}
-
-.pagination a{
-    color: black;
+.navbar ul{
+    list-style-type: none;
     padding: 10px;
-    text-decoration: none; /*Gets rid of underline for visted links*/
-    display: inline-block;
+    margin: 10px;
+    text-align: center;
 }
 
-.pagination a:hover{
-    color: red;
+.navbar li{
+    display:inline;
+    padding: 20px;
 }
 
-.pagination a.active{
-    background-color:rgb(9, 255, 0);
-    font-weight: bold
+.navbar a{
+    text-decoration: none;
+    padding: 10px;
+    display: inline;
+    text-align: center;
+}
+
+.container{
+    padding: 20px 20px;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider{
+    display:flex;
+    aspect-ratio: 16 / 11;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 5px;
+}
+
+
+.slider img{
+    flex: 1 0 100%; /*all equal size, retains width, takes up whole container*/
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.arrow {
+    position: absolute;
+    top: 105%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.arrow.left {
+    left: 1rem;
+}
+
+.arrow.right {
+    right: 1rem;
 }
