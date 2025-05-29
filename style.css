@@ -1,35 +1,49 @@
-.navbar ul{
+#title{
+    padding: 10px 10px;
+    
+}
+
+#navbarNames{
+    text-decoration: none;
+    color:black;
+}
+
+#navbarNames:hover{
+    color: rgb(0, 123, 255);
+}
+
+.navbar ul {
     list-style-type: none;
     padding: 10px;
     margin: 10px;
     text-align: center;
 }
 
-.navbar li{
-    display:inline;
+.navbar li {
+    display: inline;
     padding: 20px;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
     padding: 10px;
     display: inline;
     text-align: center;
 }
 
-.container{
+.container {
     padding: 20px 20px;
 }
 
-.slider-wrapper{
+.slider-wrapper {
     position: relative;
     max-width: 48rem;
     margin: 0 auto;
 }
 
-.slider{
-    display:flex;
-    aspect-ratio: 16 / 11;
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -37,22 +51,24 @@
 }
 
 
-.slider img{
-    flex: 1 0 100%; /*all equal size, retains width, takes up whole container*/
+.slider img {
+    flex: 1 0 100%;
+    /*all equal size, retains width, takes up whole container*/
     scroll-snap-align: start;
     object-fit: cover;
 }
 
 .arrow {
     position: absolute;
-    top: 105%;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
+    padding: 1rem;
     color: black;
-    border-radius: 5px;
+    text-decoration: none;
     z-index: 2;
+    background-color: hsla(0, 0%, 100%, 0.233);
+    padding: 0px 2px;
 }
 
 .arrow.left {
@@ -61,4 +77,25 @@
 
 .arrow.right {
     right: 1rem;
+}
+
+#address{
+    text-decoration: none;
+    color: black;
+}
+
+#address:hover{
+    color: rgb(0, 123, 255);
+}
+
+#aboutUs h1{
+    text-align: center;
+}
+
+#contact h1{
+    text-align: center;
+}
+
+#pastWork h1{
+    text-align: center;
 }
